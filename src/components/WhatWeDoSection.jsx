@@ -84,7 +84,7 @@ export default function WhatWeDoSection() {
                         <div className="flex flex-col xl:flex-row items-center gap-4 px-2 sm:px-6 text-center xl:text-left">
                             <Award className="w-10 h-10 text-[#BE0201] stroke-[1.5] shrink-0" />
                             <div>
-                                <div className="text-2xl font-extrabold text-[#291507]">25 +</div>
+                                <div className="text-2xl font-extrabold text-[#291507]">7 +</div>
                                 <div className="text-sm text-gray-500">Years Of Experience</div>
                             </div>
                         </div>
@@ -92,7 +92,7 @@ export default function WhatWeDoSection() {
                         <div className="flex flex-col xl:flex-row items-center gap-4 px-2 sm:px-6 text-center xl:text-left">
                             <Users className="w-10 h-10 text-[#BE0201] stroke-[1.5] shrink-0" />
                             <div>
-                                <div className="text-2xl font-extrabold text-[#291507]">150 K+</div>
+                                <div className="text-2xl font-extrabold text-[#291507]">30 +</div>
                                 <div className="text-sm text-gray-500">Satisfied Clients</div>
                             </div>
                         </div>
@@ -108,7 +108,7 @@ export default function WhatWeDoSection() {
                         <div className="flex flex-col xl:flex-row items-center gap-4 px-2 sm:px-6 text-center xl:text-left">
                             <Database className="w-10 h-10 text-[#BE0201] stroke-[1.5] shrink-0" />
                             <div>
-                                <div className="text-2xl font-extrabold text-[#291507]">2 K+</div>
+                                <div className="text-2xl font-extrabold text-[#291507]">15 +</div>
                                 <div className="text-sm text-gray-500">Drills Conducted</div>
                             </div>
                         </div>

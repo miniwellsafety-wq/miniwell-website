@@ -20,7 +20,7 @@ export default function Header() {
           <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-2 sm:space-y-0 sm:space-x-6 w-full sm:w-auto">
             <div className="flex items-center space-x-2">
               <Clock className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
-              <span><strong>Working Hour:</strong> 08:00am to 09:00pm</span>
+              <span><strong>Working Hour:</strong> 09:00am to 10:00pm</span>
             </div>
             <div className="flex items-center space-x-2">
               <Mail className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
@@ -39,7 +39,7 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-24">
             
-            <div className="flex-shrink-0 flex items-center space-x-3">
+            <div className="flex-shrink-0 flex items-center space-x-2 min-w-0">
                 <Image 
                   src="/miniwell-border-logo.svg" 
                   alt="Miniwell Logo" 
@@ -48,8 +48,8 @@ export default function Header() {
                   className="object-contain"
                   priority
                 />
-              <span className="text-2xl font-bold text-gray-900">
-                Miniwell<span className="text-[#BE0201]">.</span>
+              <span className="text-base sm:text-xl lg:text-2xl font-bold text-gray-900 leading-tight truncate">
+                Miniwell Fire Safety Solutions<span className="text-[#BE0201]">.</span>
               </span>
             </div>
 

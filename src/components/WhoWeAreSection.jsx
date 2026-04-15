@@ -41,7 +41,7 @@ export default function WhoWeAreSection() {
                             <div className="flex items-center gap-4">
                                 <div className="w-25 h-25 rounded-full border border-[#BE0201] flex items-center justify-center text-2xl font-extrabold shadow-sm bg-[#fdfaf5] p-2">
                                     <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center text-xl sm:text-2xl font-extrabold bg-red-50 text-[#BE0201]">
-                                        20K
+                                        20 +
                                     </div> 
                                 </div>
                                 <div className="font-bold text-[15px] leading-tight text-[#291507]">

@@ -8,30 +8,22 @@ import { ArrowRight, ArrowLeft } from "lucide-react";
 export default function TestimonialsSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const testimonials = [
-    {
-      id: 1,
-      quote: "The team provided exceptional financial guidance tailored to my needs. Their expert advice helped me grow my investments while ensuring financial security for the future. I highly recommend their services for anyone seeking trusted, personalized financial solutions!",
-      name: "Arlene McCoy",
-      role: "Co. Founder",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80",
-    },
-    {
-      id: 2,
-      quote: "Their comprehensive fire safety protocols and prompt responses are unmatched. Detailed inspections gave our corporate office complete peace of mind. Truly a professional group of experts who know exactly what they are doing.",
-      name: "Robert Fox",
-      role: "Facility Manager",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&q=80",
-    },
-    {
-      id: 3,
-      quote: "We've worked with many security and safety firms, but none match the dedication and technical knowledge shown here. The emergency response drills were eye-opening and incredibly well-organized for our entire staff.",
-      name: "Eleanor Pena",
-      role: "Operations Director",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&q=80",
-    },
-  ];
-
+const testimonials = [
+  {
+    id: 1,
+    quote: "The team provided exceptional financial guidance tailored to my needs. Their expert advice helped me grow my investments while ensuring financial security for the future. I highly recommend their services for anyone seeking trusted, personalized financial solutions!",
+    name: "Amit Patel",
+    role: "Co. Founder",
+    image: "https://images.unsplash.com/photo-1615109398623-88346a601842?auto=format&fit=crop&w=150&q=80", // Indian male
+  },
+  {
+    id: 2,
+    quote: "Their comprehensive fire safety protocols and prompt responses are unmatched. Detailed inspections gave our corporate office complete peace of mind. Truly a professional group of experts who know exactly what they are doing.",
+    name: "Manish Kumar",
+    role: "Facility Manager",
+    image: "https://images.unsplash.com/photo-1607346256330-dee7af15f7c5?auto=format&fit=crop&w=150&q=80", // Indian male
+  },
+];
   const handlePrev = () => {
     setCurrentIndex((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
   };
