@@ -20,7 +20,7 @@ export default function Header() {
           <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-2 sm:space-y-0 sm:space-x-6 w-full sm:w-auto">
             <div className="flex items-center space-x-2">
               <Clock className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
-              <span><strong>Working Hour:</strong> 09:00am to 10:00pm</span>
+              <span><strong>Working Hour:</strong> 09:00am to 06:00pm</span>
             </div>
             <div className="flex items-center space-x-2">
               <Mail className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
