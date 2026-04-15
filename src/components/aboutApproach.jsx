@@ -28,10 +28,8 @@ export default function MissionSection() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* ── TOP HEADER AREA ── */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 mb-16 items-start">
           
-          {/* Left: Title Area */}
           <div className="lg:col-span-7">
             <div className="flex items-center gap-2 text-[#BE0201] font-bold uppercase tracking-widest text-xs mb-4">
               <span className="w-1.5 h-1.5 rounded-full bg-[#BE0201]"></span>
@@ -43,7 +41,6 @@ export default function MissionSection() {
             </h2>
           </div>
 
-          {/* Right: Intro Paragraph */}
           <div className="lg:col-span-5 lg:pt-8">
             <p className="text-gray-500 leading-relaxed text-sm sm:text-[15px] max-w-lg">
               When it comes to fire protection, choosing the right partner is critical. 
@@ -53,18 +50,15 @@ export default function MissionSection() {
           </div>
         </div>
 
-        {/* ── APPROACH CARDS GRID ── */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
           {approaches.map((item, index) => {
             const Icon = item.icon;
             return (
               <div key={index} className="flex items-start gap-5 group">
-                {/* Icon Container - Primary Red */}
                 <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#BE0201] flex items-center justify-center shrink-0 shadow-md transition-transform duration-300 group-hover:scale-110">
                   <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-white" strokeWidth={1.5} />
                 </div>
 
-                {/* Text Content */}
                 <div className="flex flex-col">
                   <h3 className="text-lg sm:text-xl font-bold text-[#291507] mb-2 group-hover:text-[#BE0201] transition-colors">
                     {item.title}

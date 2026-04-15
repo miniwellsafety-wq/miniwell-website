@@ -8,15 +8,10 @@ export default function AboutHero() {
     <section className="w-full bg-[#fcfbf8] sm:px-6 lg:px-8 sm:py-8 font-sans">
       <div className="relative bg-[#291507] sm:rounded-[2rem] overflow-hidden shadow-sm min-h-[250px] sm:min-h-[300px] flex items-center">
 
-        {/* ── DECORATIVE BACKGROUND ELEMENTS ── */}
-        
-        {/* Soft Red Glow - Bottom Left */}
         <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-[#BE0201] rounded-full blur-[100px] opacity-20 pointer-events-none"></div>
         
-        {/* Soft Red Glow - Bottom Right */}
         <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-[#BE0201] rounded-full blur-[100px] opacity-20 pointer-events-none"></div>
 
-        {/* Subtle Dotted Pattern - Right Side */}
         <div
           className="absolute right-12 top-12 bottom-12 w-48 z-0 opacity-5 pointer-events-none hidden md:block"
           style={{
@@ -25,7 +20,6 @@ export default function AboutHero() {
           }}
         />
 
-        {/* ── MAIN CONTENT ── */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10 py-16 lg:py-24">
           
           {/* Page Title */}

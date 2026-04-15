@@ -48,7 +48,6 @@ export default function ServicesTarget() {
                 key={index}
                 className="group relative overflow-hidden flex flex-col p-8 rounded-[2rem] transition-all duration-500 cursor-pointer bg-red-100/60 text-[#291507] border border-gray-200"
               >
-                {/* Hover Background */}
                 <div className="absolute bottom-0 left-0 w-full h-0 bg-[#BE0201] transition-all duration-500 ease-in-out group-hover:h-full z-0" />
 
                 <div className="relative z-10 flex flex-col h-full">

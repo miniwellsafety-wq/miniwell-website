@@ -36,22 +36,18 @@ export default function ContactInfoCards() {
                 key={index}
                 className="group relative overflow-hidden flex flex-col p-8 rounded-[2rem] transition-all duration-500 cursor-pointer bg-red-100/60 text-[#291507] border border-gray-200"
               >
-                {/* Hover Background (Shutter Up Effect) */}
                 <div className="absolute bottom-0 left-0 w-full h-0 bg-[#BE0201] transition-all duration-500 ease-in-out group-hover:h-full z-0" />
 
                 <div className="relative z-10 flex flex-col h-full">
                   
-                  {/* Icon inside a white circle */}
                   <div className="mb-6 w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-sm">
                     <Icon className="w-6 h-6 text-[#BE0201] transition-colors duration-500" />
                   </div>
 
-                  {/* Title */}
                   <h3 className="text-xl font-bold mb-4 transition-colors duration-500 group-hover:text-white">
                     {info.title}
                   </h3>
 
-                  {/* Details */}
                   <div className="flex flex-col space-y-1.5">
                     {info.details.map((line, i) => (
                       <p
@@ -78,7 +74,7 @@ export function ContactForm() {
   const [formData, setFormData] = useState({
     firstName: "", lastName: "", email: "", phone: "", message: "",
   });
-  const [status, setStatus] = useState("idle"); // idle | loading | success | error
+  const [status, setStatus] = useState("idle"); 
 
   const handleChange = (e) => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));

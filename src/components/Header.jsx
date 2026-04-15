@@ -53,8 +53,7 @@ export default function Header() {
               </span>
             </div>
 
-            {/* Desktop Navigation */}
-            <nav className="hidden lg:flex space-x-8">
+            <nav aria-label="Main Navigation" className="hidden lg:flex space-x-8">
               <Link 
                 href="/" 
                 className={`flex items-center font-medium py-8 transition-colors ${
@@ -103,7 +102,6 @@ export default function Header() {
               </Link>
             </div>
 
-            {/* Mobile Hamburger Button */}
             <div className="lg:hidden flex items-center">
               <button 
                 onClick={() => setIsMobileMenuOpen(true)}
@@ -115,7 +113,6 @@ export default function Header() {
           </div>
         </div>
 
-        {/* Mobile Menu Backdrop (Dark overlay) */}
         {isMobileMenuOpen && (
           <div 
             className="fixed inset-0 bg-black/40 z-40 lg:hidden transition-opacity"
@@ -123,13 +120,11 @@ export default function Header() {
           />
         )}
 
-        {/* Mobile Menu Drawer (Right Side) */}
         <div 
           className={`fixed top-0 right-0 h-full w-72 bg-white z-50 shadow-2xl transform transition-transform duration-300 ease-in-out lg:hidden ${
             isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
-          {/* Drawer Header & Close Button */}
           <div className="flex items-center justify-between p-4 border-b border-gray-100">
             <span className="text-xl font-bold text-gray-900">
               Menu<span className="text-[#BE0201]">.</span>
@@ -142,7 +137,6 @@ export default function Header() {
             </button>
           </div>
 
-          {/* Drawer Links */}
           <div className="px-4 py-4 space-y-1">
             <Link 
               href="/" 

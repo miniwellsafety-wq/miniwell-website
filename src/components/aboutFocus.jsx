@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import { LayoutGrid, Fingerprint, HardHat, Diamond } from "lucide-react";
 
 export default function ProcessSection() {
-  // State to handle the highlighted card on hover
   const [activeStep, setActiveStep] = useState(0);
 
   const steps = [
@@ -38,7 +37,6 @@ export default function ProcessSection() {
     <section className="w-full bg-[#fdfaf5] py-16 lg:py-24 font-sans text-[#291507]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* ── HEADER ROW ── */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 mb-16 items-start">
           <div>
             <div className="flex items-center gap-2 text-[#BE0201] font-bold uppercase tracking-widest text-xs mb-4">
@@ -60,7 +58,6 @@ export default function ProcessSection() {
           </div>
         </div>
 
-        {/* ── PROCESS STEPS GRID ── */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {steps.map((step, index) => {
             const Icon = step.icon;
@@ -76,14 +73,12 @@ export default function ProcessSection() {
                     : "bg-red-100/60 text-[#291507] hover:bg-[#f6f2e6]"
                 }`}
               >
-                {/* Step Number */}
                 <div className={`text-lg font-bold mb-10 transition-colors duration-300 ${
                   isActive ? "text-white/80" : "text-[#BE0201]"
                 }`}>
                   {step.num}
                 </div>
 
-                {/* Icon */}
                 <div className="mb-10">
                   <Icon 
                     className={`w-12 h-12 stroke-[1.25] transition-colors duration-300 ${
@@ -92,7 +87,6 @@ export default function ProcessSection() {
                   />
                 </div>
 
-                {/* Content */}
                 <div className="mt-auto">
                   <h3 className={`text-xl font-bold mb-4 transition-colors duration-300 ${
                     isActive ? "text-white" : "text-[#291507]"
